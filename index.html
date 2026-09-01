@@ -11,6 +11,7 @@
     <body>
         <nav>
             <h2>DoctorCare</h2>
+            <button id="doctorsBtn">our doctors</button>
             <button id="appointmentBtn">Appointment</button>
             <button id="myAppointmentsBtn">My Appointments</button>
         </nav>
@@ -52,9 +53,19 @@
         <section id="appointment" class="appointment">
             <h2>Book Appointment</h2>
             <form id="appointmentForm">
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Your name">
                 <input type="email" placeholder="Email">
                 <input id="appointmentDate" type="datetime-local">
+                <select id="doctor">
+                    <option>Dr. Ahmed</option>
+                    <option>Dr. Mahmoud babul</option>
+                    <option>Dr. Omar</option>
+                </select>
+                <select id="department">
+                    <option>Cardiology</option>
+                    <option>Dental</option>
+                    <option>Neurology</option>
+                </select>
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -66,6 +77,8 @@
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Doctor</th>
+                        <th>Department</th>
                         <th>Date</th>
                     </tr>
                 </thead>
