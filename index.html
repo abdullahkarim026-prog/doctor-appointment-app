@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>doctor-appointment</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav>
+            <h2>DoctorCare</h2>
+            <button id="appointmentBtn">Appointment</button>
+            <button id="myAppointmentsBtn">My Appointments</button>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>We care about your health</h1>
+                <p>
+                    .Book appointments with the best doctors
+                </p>
+                <button id="bookNowBtn">Book Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600" alt="Doctor illustration" />
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors">
+            <h2>  Our Doctors</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Dr. Ahmed" />   
+                    <h3>Dr. Ahmed</h3>
+                    <p>Cardiology</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.phototourl.com/free/2026-08-26-afd5e187-f81c-4057-994b-74eb09ba30db.jpg" alt="Dr. Sara" />
+                    <h3>Dr. Mahmoud babul</h3>
+                    <p>Dental</p>
+                </div>
+                <div class="card">
+                    <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Dr. Omar" />
+                    <h3>Dr. Omar</h3>
+                    <p>Neurology</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment">
+            <h2>Book Appointment</h2>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input id="appointmentDate" type="datetime-local">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="appointmentsList" class="appointment">
+            <h2>My Appointment</h2>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentsTable">
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2026 Doctor Appointment App</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

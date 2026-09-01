@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background-color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+button{
+    background-color: #00a3ff;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+}
+
+.hero-image img{
+    width:500px;
+    border-radius:20px;
+}
+
+.doctors{
+    text-align:center;
+    padding:80px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    width:250px;
+    background:white;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.appointment{
+    text-align:center;
+    padding:80px;
+} 
+
+form{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    margin:auto;
+    gap:15px;
+}
+
+input{
+    padding:12px;
+}
+
+table{
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#00a3ff;
+    color:white;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
